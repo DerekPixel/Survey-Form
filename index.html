@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>NSP Survey Form</title>
 </head>
 <body>
-    
+    <main id="main">
+        <header>
+
+            <h1 id="title">
+                NSP Survey
+            </h1>
+
+            <p id="description">
+                Survey for NSP
+            </p>
+
+        </header>
+
+        <section>
+
+            <form id="survey-form">
+                <div>
+                    <label for="name" id="name-label">Name</label>
+                        <input 
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter you name"
+                            required
+                        >
+                </div>
+                
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                        <input 
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter you email"
+                            required
+                        >
+                </div>
+
+                <div>
+                    <label for="age" id="number-label">Age</label>
+                        <input 
+                            type="number"
+                            name="age"
+                            id="number"
+                            placeholder="Age"
+                            min="0"
+                            max="420"
+                        >
+                </div>
+
+                <div>
+
+                    <p>Who is the hottest member of NSP</p>
+
+                    <select name="hottest" id="dropdown" required>
+
+                        <option disabled selected value="">Select a band member</option>
+
+                        <option value="danny">Danny</option>
+
+                        <option value="brian">Brian</option>
+
+                    </select>
+
+                </div>
+
+                <div class="album">
+
+                    <p>which album is your favourite</p>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="NSFW"
+                        >
+                    NSFW</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Strawberries and Cream"
+                        >
+                    Strawberries and Cream</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Attitude City"
+                        >
+                    Attitude City</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Under the Covers"
+                        >
+                    Under the Covers</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Under the Covers Vol.2"
+                        >
+                    Under the Covers Vol.2</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Cool Patrol"
+                        >
+                    Cool Patrol</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="Under the Covers Vol.3"
+                        >
+                    Under the Covers Vol.3</label>
+
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="fav-album" 
+                            id=""
+                            value="The Prophecy"
+                        >
+                    The Prophecy</label>
+
+                </div>
+
+                <div class="std">
+
+                    <p>Does Brian have an STD?</p>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="std" 
+                            id=""
+                            value="yes"
+                            >
+                    Yes</label>
+
+                    <label>
+                        <input 
+                            type="checkbox" 
+                            name="std" 
+                            id=""
+                            value="no"
+                            >
+                    No</label>
+
+                </div>
+
+                <div>
+
+                    <p>Tell me your other thoughts on NSP</p>
+                    
+                    <textarea 
+                        name="comment" 
+                        id="comments" 
+                        placeholder="Enter your text here..."
+                    ></textarea>
+
+                </div>
+
+                <div>
+
+                    <button type="submit" id="submit">
+                        Submit
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
